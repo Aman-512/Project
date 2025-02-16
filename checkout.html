@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>My E-Commerce Store</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <div class="container">
+        <h1>Checkout</h1>
+        <p>Complete your order below.</p>
+
+        <button id="placeOrderBtn">Place Order</button>
+
+        <div id="orderMessage" style="display: none;">
+            🎉 Thank you for your order! It has been placed successfully.
+        </div>
+    </div>
+
+    <footer>&copy; 2025 My E-Commerce Store</footer>
+
+    <script>
+        document.getElementById("placeOrderBtn").addEventListener("click", function() {
+            document.getElementById("orderMessage").style.display = "block";
+        });
+    </script>
+
+</body>
+</html>
